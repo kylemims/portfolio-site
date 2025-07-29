@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-top: 120px;
+}
+.spacer {
+  height: 120px; /* Match your header/nav height */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.cta-button:hover {
+  background-color: var(--highlight-color);
+}
+@media (max-width: 768px) {
+  .spacer {
+    height: 100px;
+  }
+}

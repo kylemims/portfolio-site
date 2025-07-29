@@ -1,0 +1,116 @@
+/* Container for the grid */
+/* create a 3 column grid layout for gallery with responsive design */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  /* padding: 1rem; */
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
+}
+
+/* Thumbnail Cards */
+.gallery-thumbnail {
+  background-color: var(--card-bg);
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-thumbnail img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.gallery-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--accent-color), var(--highlight-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.gallery-thumbnail:hover::before {
+  opacity: 0.2;
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(235, 111, 146, 0.5);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-thumbnail:hover .image-overlay {
+  transform: translateY(0);
+}
+
+/* Modal styling enhancements */
+.modal-content {
+  max-width: 95vw;
+  max-height: 95vh;
+}
+
+/* Custom swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-color) !important;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent-color) !important;
+}
+
+@media (max-width: 768px) {
+  .gallery-thumbnail {
+    width: 140px;
+    height: 140px;
+  }
+
+  .gallery-thumbnail img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Hide on mobile, use swipe instead */
+  }
+}

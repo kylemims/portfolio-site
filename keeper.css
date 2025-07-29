@@ -1,0 +1,171 @@
+/* .web-projects {
+  background-color: var(--primary-bg);
+  padding: var(--section-padding);
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.web-projects-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.web-projects h1 {
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+
+/* Grid layout for all project cards */
+/* .web-projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+} */
+
+/* .web-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+} */
+
+/* Project Card */
+/* .web-project-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 0 transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .web-project-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  height: fit-content;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web-project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.web-project-card h3 {
+  color: var(--highlight-color);
+  margin-bottom: 0.5rem;
+}
+
+.web-project-card p {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+} */
+
+/* Swiper Styling */
+/* .web-project-card .swiper {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.web-project-card .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-color) !important;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent-color) !important;
+} */
+
+/* CTA Buttons */
+/* .web-project-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.web-project-cta a {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-heading);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.web-project-cta a:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-bg);
+}
+
+.pizza-swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.swiper-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 80px;
+  display: block;
+} */
+/* Responsive */
+/* @media (max-width: 768px) {
+  .web-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .web-project-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .web-project-card .cta-button {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .web-project-card p {
+    font-size: 0.9rem;
+  }
+
+  .web-project-card h3 {
+    font-size: 1.2rem;
+  }
+} */

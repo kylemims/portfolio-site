@@ -1,0 +1,74 @@
+.hero {
+  min-height: 80vh;
+  padding: 6rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--highlight-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero p {
+  color: var(--muted-text);
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background-color: var(--highlight-color);
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

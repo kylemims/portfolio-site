@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--licorice);
+  color: var(--seasalt);
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 2px solid var(--ash);
+}
+
+.footer a {
+  color: var(--maize);
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  color: var(--ash);
+}

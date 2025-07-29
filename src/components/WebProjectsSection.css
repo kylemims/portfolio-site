@@ -1,0 +1,116 @@
+.web-projects {
+  background-color: var(--primary-bg);
+  /* padding: var(--section-padding); */
+  text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.project-row {
+  display: flex;
+  flex-direction: row; /* CHANGE: row for side-by-side */
+  gap: 3rem;
+  align-items: stretch; /* CHANGE: stretch for equal heights */
+  justify-content: center; /* ADD: center the cards */
+  max-width: 1200px; /* ADD: prevent cards from getting too wide */
+  margin: 0 auto; /* ADD: center the container */
+}
+.section-title {
+  color: var(--highlight-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  max-width: 500px;
+  flex: 1; /* ADD: equal width distribution */
+  min-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  /* max-height: 500px; */
+}
+
+.project-title {
+  color: var(--highlight-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.slide-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-heading);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-bg);
+}
+
+/* Fix horizontal overflow on mobile */
+
+/* html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+} */
+
+.swiper-wrapper {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Hide arrows on small screens */
+@media (max-width: 768px) {
+  /* .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  } */
+
+  .project-card {
+    padding: 1.2rem 0.8rem;
+    max-width: 460px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-row {
+    flex-direction: column; /* CHANGE: column for stacking */
+    align-items: center;
+  }
+}
