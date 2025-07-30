@@ -26,6 +26,7 @@ export const ContactPage = () => {
           className="contact-form">
           {/* Hidden field for spam protection */}
           <input type="hidden" name="form-name" value="contact" />
+          <input name="bot-field" type="hidden" />
           {/* <p className="hidden">
             <label>
               Don’t fill this out: <input name="bot-field" />
@@ -47,7 +48,7 @@ export const ContactPage = () => {
             <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit" className="cta-button">
+          <button type="submit" className="cta-button" onClick={handleSubmit}>
             Send Message
           </button>
         </form>
