@@ -23,20 +23,30 @@ export const ContactPage = () => {
           data-netlify="true"
           netlify-honeypot="bot-field"
           className="contact-form">
-          {/* Required hidden input for Netlify */}
+          {/* Hidden field for spam protection */}
           <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="bot-field" />
+          <p className="hidden">
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </p>
 
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
 
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
 
-          <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="cta-button">
             Send Message
           </button>
         </form>
