@@ -4,17 +4,17 @@ import "./GraphicDesignGallery.css";
 
 const designs = [
   {
-    name: "Brains",
+    name: "Mad Brains",
     thumb: "/assets/graphic-design/brains-thumbnail.webp",
     full: "/assets/graphic-design/brains-feature.webp",
   },
   {
-    name: "Panther",
+    name: "Panthered",
     thumb: "/assets/graphic-design/panther-thumbnail.webp",
     full: "/assets/graphic-design/panther-feature.webp",
   },
   {
-    name: "BoldSnake",
+    name: "Over The Influence",
     thumb: "/assets/graphic-design/boldsnake-thumbnail.webp",
     full: "/assets/graphic-design/boldsnake-feature.webp",
   },
@@ -24,17 +24,17 @@ const designs = [
     full: "/assets/graphic-design/Mark-Stuart-feature.webp",
   },
   {
-    name: "SnakeBrain",
+    name: "Wild Thoughts",
     thumb: "/assets/graphic-design/snakebrain-thumbnail.webp",
     full: "/assets/graphic-design/snakebrain-feature.webp",
   },
   {
-    name: "Gloves",
+    name: "Underdogs",
     thumb: "/assets/graphic-design/curve-feature.webp",
     full: "/assets/graphic-design/curve-feature.webp",
   },
   {
-    name: "CrewSnake",
+    name: "Stay Classy",
     thumb: "/assets/graphic-design/crewsnake-thumbnail.webp",
     full: "/assets/graphic-design/crewsnake-feature.webp",
   },
@@ -44,7 +44,7 @@ const designs = [
     full: "/assets/graphic-design/no-roses-main-feature.webp",
   },
   {
-    name: "BaseballSnake",
+    name: "TTD",
     thumb: "/assets/graphic-design/Baseball-NR-thumbnail.webp",
     full: "/assets/graphic-design/Baseball-NR-feature.webp",
   },

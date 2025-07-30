@@ -49,9 +49,14 @@ export const FeaturedMockups = () => {
         <div className="mockup-grid">
           {mockups.map((mockup, index) => (
             <div className="mockup-card" key={index} ref={(el) => (cardsRef.current[index] = el)}>
+              <div className="project-info">
+                <h3>{mockup.title}</h3>
+                <p>{mockup.desc}</p>
+                <a href="/websites-apps" className="info-cta">
+                  View Details
+                </a>
+              </div>
               <img src={mockup.img} alt={mockup.title} />
-              <h3>{mockup.title}</h3>
-              <p>{mockup.desc}</p>
             </div>
           ))}
         </div>
@@ -59,3 +64,9 @@ export const FeaturedMockups = () => {
     </section>
   );
 };
+
+// <div className="mockup-card" key={index} ref={(el) => (cardsRef.current[index] = el)}>
+//   <img src={mockup.img} alt={mockup.title} />
+//   <h3>{mockup.title}</h3>
+//   <p>{mockup.desc}</p>
+// </div>

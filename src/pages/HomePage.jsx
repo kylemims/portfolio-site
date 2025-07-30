@@ -1,12 +1,13 @@
-import { Hero } from "../components/Hero";
+import { Hero } from "../components/Hero.jsx";
 import { FeaturedMockups } from "../components/FeaturedMockups.jsx";
 import { Wrapper } from "../components/Wrapper.jsx";
 import "../components/FeaturedMockups.css";
-
-export const AboutPage = () => {
+import { ProfileSection } from "../components/ProfileSection.jsx";
+export const HomePage = () => {
   return (
     <Wrapper>
       <Hero />
+      <ProfileSection />
       <FeaturedMockups />
     </Wrapper>
   );

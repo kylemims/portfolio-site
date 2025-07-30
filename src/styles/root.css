@@ -1,5 +1,4 @@
 :root {
-  /* Brand Colors */
   --primary-bg: #0f111a;
   --secondary-bg: #1c1e26;
   --accent-color: #eb6f92;
@@ -8,7 +7,6 @@
   --muted-text: #908caa;
   --card-bg: #2a2c39;
 
-  /* Typography */
   --font-heading: "Bebas Neue", sans-serif;
   --font-body: "Inter", sans-serif;
 
@@ -53,22 +51,6 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* .container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1rem;
-} */
-
-/* section {
-  padding: var(--section-padding);
-} */
-
-/* Responsive Project Grid */
-/* .project-grids {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-} */
 @media (max-width: 768px) {
   :root {
     --section-padding: 3rem 1rem;

@@ -27,6 +27,13 @@ export const WebProjectsSection = () => {
     "/assets/pickapark/park-details.png",
   ];
 
+  const vividImages = [
+    "/assets/vivid/vivid-dashboard.png",
+    "/assets/vivid/vivid-crm.png",
+    "/assets/vivid/vivid-social.png",
+    "/assets/vivid/vivid-email.png",
+  ];
+
   return (
     <section className="web-projects">
       <h2 className="section-title">Websites & Apps</h2>
@@ -90,7 +97,7 @@ export const WebProjectsSection = () => {
           </Swiper>
           <div className="project-links">
             <a
-              href="https://github.com/kylemims/pick-a-park"
+              href="https://github.com/kylemims/parkplan-capstone"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button">
@@ -102,6 +109,35 @@ export const WebProjectsSection = () => {
               rel="noopener noreferrer"
               className="cta-button">
               View Live
+            </a>
+          </div>
+        </div>
+        {/* Vivid Platform (Wish List) */}
+        <div className="project-card">
+          <h3 className="project-title">VIVID</h3>
+          <p className="project-description">
+            Vision for an all-in-one business platform: CRM, marketing suite, booking, billing & analytics in
+            a single elegant dashboard.
+          </p>
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            loop
+            spaceBetween={20}
+            className="swiper-wrapper">
+            {vividImages.map((src, index) => (
+              <SwiperSlide key={index}>
+                <img src={src} alt={`Vivid Slide ${index + 1}`} className="slide-image" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="project-links">
+            <a href="/contact" target="_blank" rel="noopener noreferrer" className="cta-button">
+              Want to Colab?
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="cta-button disabled-link">
+              Demo Coming Soon
             </a>
           </div>
         </div>
