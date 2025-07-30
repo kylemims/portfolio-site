@@ -1,0 +1,30 @@
+.notfound {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--muted-text);
+  padding: 4rem 1rem;
+}
+
+.notfound h1 {
+  font-size: 6rem;
+  color: var(--highlight-color);
+  margin-bottom: 1rem;
+}
+
+.notfound p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}

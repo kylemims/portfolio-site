@@ -6,7 +6,7 @@ import { ContactPage } from "./pages/Contact";
 import { WebsitesAppsPage } from "./pages/WebsitesApps";
 import { GraphicDesignPage } from "./pages/GraphicDesign";
 import { ThankYou } from "./pages/ThankYou.jsx";
-// import "./styles/Layout.css";
+import { NotFound } from "./pages/NotFound.jsx";
 import "./styles/App.css";
 import "./styles/root.css";
 
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/websites-apps" element={<WebsitesAppsPage />} />
           <Route path="/graphic-design" element={<GraphicDesignPage />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
