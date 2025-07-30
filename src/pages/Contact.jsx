@@ -22,6 +22,7 @@ export const ContactPage = () => {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          action="/thank-you"
           className="contact-form">
           {/* Hidden field for spam protection */}
           <input type="hidden" name="form-name" value="contact" />
