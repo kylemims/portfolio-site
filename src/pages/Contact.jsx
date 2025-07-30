@@ -26,11 +26,11 @@ export const ContactPage = () => {
           className="contact-form">
           {/* Hidden field for spam protection */}
           <input type="hidden" name="form-name" value="contact" />
-          <p className="hidden">
+          {/* <p className="hidden">
             <label>
               Don’t fill this out: <input name="bot-field" />
             </label>
-          </p>
+          </p> */}
 
           <label>
             Name
