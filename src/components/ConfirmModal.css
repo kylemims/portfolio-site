@@ -1,4 +1,3 @@
-/* Modal Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -39,9 +38,9 @@
 .modal-content button {
   background: var(--accent-color);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s;
   margin-top: 1rem;
@@ -52,7 +51,6 @@
   color: var(--primary-bg);
 }
 
-/* Animation */
 @keyframes fadeInScale {
   0% {
     opacity: 0;

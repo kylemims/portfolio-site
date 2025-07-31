@@ -14,41 +14,43 @@ export const ContactPage = () => {
 
   return (
     <Wrapper>
-      <div>
+      <div className="contact-title">
         <h1>Contact</h1>
         <p>Reach out for collaborations or inquiries!</p>
         <form
           name="contact"
           method="POST"
           data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you"
-          className="contact-form">
-          {/* Hidden field for spam protection */}
+          data-netlify-honeypot="bot-field"
+          className="contact-form"
+          onSubmit={handleSubmit}>
+          {/* Netlify form detection */}
           <input type="hidden" name="form-name" value="contact" />
-          <input name="bot-field" type="hidden" />
-          {/* <p className="hidden">
-            <label>
-              Don’t fill this out: <input name="bot-field" />
+
+          {/* Honeypot field - hidden from users, visible to bots */}
+          <div className="sr-only">
+            <label htmlFor="bot-field">
+              Don't fill this out if you're human:
+              <input type="text" name="bot-field" id="bot-field" tabIndex="-1" autoComplete="off" />
             </label>
-          </p> */}
+          </div>
 
-          <label>
+          <label htmlFor="name">
             Name
-            <input type="text" name="name" required />
+            <input type="text" name="name" id="name" required />
           </label>
 
-          <label>
+          <label htmlFor="email">
             Email
-            <input type="email" name="email" required />
+            <input type="email" name="email" id="email" required />
           </label>
 
-          <label>
+          <label htmlFor="message">
             Message
-            <textarea name="message" rows="5" required></textarea>
+            <textarea name="message" id="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit" className="cta-button" onClick={handleSubmit}>
+          <button type="submit" className="cta-button">
             Send Message
           </button>
         </form>

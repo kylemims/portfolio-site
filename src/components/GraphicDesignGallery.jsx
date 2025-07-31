@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GalleryModal } from "../components/GalleryModal";
 import "./GraphicDesignGallery.css";
 
@@ -54,24 +54,31 @@ export const GraphicDesignGallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeImages, setActiveImages] = useState([]);
 
-  // const openModal = (image) => {
-  //   setActiveImages([image]);
-  //   setIsOpen(true);
-  // };
   const openModal = (clickedIndex) => {
     const allFullImages = designs.map((design) => design.full);
     setActiveImages(allFullImages);
-    setStartIndex(clickedIndex); // Add this state
+    setStartIndex(clickedIndex);
     setIsOpen(true);
   };
 
   const [startIndex, setStartIndex] = useState(0);
 
+  useEffect(() => {
+    const handleEscapeKey = (e) => {
+      if (e.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleEscapeKey);
+    return () => {
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div className="projects-grid">
         {designs.map((design, index) => (
-          // <div key={index} className="gallery-thumbnail" onClick={() => openModal(design.full)}>
           <div key={index} className="gallery-thumbnail" onClick={() => openModal(index)}>
             <img src={design.thumb} alt={design.name} />
             <div className="image-overlay">
@@ -84,7 +91,7 @@ export const GraphicDesignGallery = () => {
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         images={activeImages}
-        startIndex={startIndex} // remove startIndex prop if reverting back to single image
+        startIndex={startIndex}
       />
     </>
   );

@@ -36,7 +36,7 @@ export const WebProjectsSection = () => {
 
   return (
     <section className="web-projects">
-      <h2 className="section-title">Websites & Apps</h2>
+      <h1 className="section-title">Websites & Apps</h1>
       <div className="project-row">
         {/* Punk Rock Pizza */}
         <div className="project-card">

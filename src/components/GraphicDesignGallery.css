@@ -1,21 +1,17 @@
-/* Container for the grid */
-/* create a 3 column grid layout for gallery with responsive design */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  /* padding: 1rem; */
+  gap: 1rem;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--section-padding);
 }
 
-/* Thumbnail Cards */
 .gallery-thumbnail {
   background-color: var(--card-bg);
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +67,11 @@
   transform: translateY(0);
 }
 
-/* Modal styling enhancements */
 .modal-content {
   max-width: 95vw;
   max-height: 95vh;
 }
 
-/* Custom swiper navigation */
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--accent-color) !important;
@@ -94,13 +88,13 @@
 
 @media (max-width: 768px) {
   .gallery-thumbnail {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
   .gallery-thumbnail img {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     object-fit: contain;
     transition: transform 0.3s ease;
   }

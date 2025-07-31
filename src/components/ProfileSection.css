@@ -1,7 +1,6 @@
 .profile-section {
-  /* width: 100%; */
-  background-color: #f6f1eb; /* Soft Sand */
-  padding: 4rem 1rem;
+  background-color: #f6f1eb;
+  padding: 0;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -24,10 +23,8 @@
 .profile-image {
   flex: 0 0 250px;
   max-width: 360px;
-  /* border-radius: 16px; */
-  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); */
   filter: brightness(0.9) contrast(1.05);
-  margin-right: -30px;
+  /* margin-right: -30px; */
 }
 
 .profile-text {
@@ -51,7 +48,6 @@
 .profile-icon-row {
   display: flex;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -76,9 +72,9 @@
 .profile-text button {
   background-color: var(--accent-color);
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -92,19 +88,20 @@
   .profile-container {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
   }
 
   .profile-image {
-    margin-bottom: -1rem;
-    margin-right: 10px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .profile-text h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .profile-text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .profile-icon-row {

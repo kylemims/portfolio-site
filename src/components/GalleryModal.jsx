@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import "./ConfirmModal.css"; // Shared modal styles
+import "./ConfirmModal.css";
 
 export const GalleryModal = ({ isOpen, onClose, images, startIndex = 0 }) => {
   if (!isOpen) return null;
