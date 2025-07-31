@@ -36,6 +36,7 @@
   font-size: 2rem;
   color: #1a1a1a;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .profile-text p {
@@ -70,9 +71,9 @@
 }
 
 .cta-lightbg-button {
-  background-color: var(--accent-color);
-  color: #fff;
-  padding: 0.75rem 1.25rem;
+  background-color: var(--secondary-bg);
+  color: var(--highlight-color);
+  padding: 1rem 1.25rem;
   width: 170px;
   border-radius: 30px;
   border: none;
