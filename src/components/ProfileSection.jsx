@@ -13,7 +13,9 @@ export const ProfileSection = () => {
             collaboration, and new opportunities to push creative boundaries.
           </p>
           <div className="profile-icon-row">
-            <button onClick={() => (window.location.href = "mailto:kylemims.dev@gmail.com")}>
+            <button
+              className="cta-button"
+              onClick={() => (window.location.href = "mailto:kylemims.dev@gmail.com")}>
               Send Feedback
             </button>
             <div className="icon-group">

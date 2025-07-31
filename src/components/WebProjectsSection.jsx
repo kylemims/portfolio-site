@@ -62,14 +62,14 @@ export const WebProjectsSection = () => {
               href="https://github.com/kylemims/punk-pizza"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button">
+              className="webapp-feature-buttons">
               View Code
             </a>
             <a
               href="https://pizza.kylemims.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button">
+              className="webapp-feature-buttons">
               View Live
             </a>
           </div>
@@ -100,14 +100,14 @@ export const WebProjectsSection = () => {
               href="https://github.com/kylemims/parkplan-capstone"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button">
+              className="webapp-feature-buttons">
               View Code
             </a>
             <a
               href="https://pickapark.kylemims.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button">
+              className="webapp-feature-buttons">
               View Live
             </a>
           </div>
@@ -133,11 +133,8 @@ export const WebProjectsSection = () => {
             ))}
           </Swiper>
           <div className="project-links">
-            <a href="/contact" target="_blank" rel="noopener noreferrer" className="cta-button">
+            <a href="/contact" target="_blank" rel="noopener noreferrer" className="webapp-feature-buttons">
               Want to Colab?
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="cta-button disabled-link">
-              Demo Coming Soon
             </a>
           </div>
         </div>

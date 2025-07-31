@@ -69,20 +69,24 @@
   transition: filter 0.1s ease;
 }
 
-.profile-text button {
+/* .profile-text button {
   background-color: var(--accent-color);
   color: #fff;
   padding: 0.75rem 1.25rem;
-  border: none;
+  width: 150px;
   border-radius: 30px;
   font-size: 1rem;
-  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 8px 25px rgba(194, 144, 89, 0);
   transition: background 0.3s ease;
-}
+} */
 
-.profile-text button:hover {
+/* .profile-text button:hover {
   background-color: var(--highlight-color);
-}
+} */
 
 @media (max-width: 768px) {
   .profile-container {

@@ -50,7 +50,7 @@ export const ContactPage = () => {
             <textarea name="message" id="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit" className="cta-button">
+          <button type="submit" className="submit-contact-form-button">
             Send Message
           </button>
         </form>
