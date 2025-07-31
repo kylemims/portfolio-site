@@ -12,5 +12,16 @@
 }
 
 .footer a:hover {
-  color: var(--ash);
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 0 8px var(--accent-color);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 16px;
+  transition: ease 0.2s;
+  filter: blur(0.5px);
+}
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }

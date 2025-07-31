@@ -1,6 +1,8 @@
 .contact-title h1 {
   text-align: center;
   color: var(--highlight-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 .contact-title p {
   text-align: center;

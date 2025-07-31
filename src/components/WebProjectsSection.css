@@ -1,8 +1,6 @@
 .web-projects {
   background-color: var(--primary-bg);
-  /* padding: var(--section-padding); */
   text-align: center;
-  /* max-width: var(--max-width); */
   margin: 0 auto;
   padding-bottom: 150px;
 }
@@ -17,7 +15,7 @@
 }
 .section-title {
   color: var(--highlight-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
 }
 
