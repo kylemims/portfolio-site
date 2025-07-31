@@ -5,6 +5,7 @@
   gap: 1rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-bottom: 4rem;
   padding: var(--section-padding);
 }
 

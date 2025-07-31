@@ -13,6 +13,7 @@
   letter-spacing: 1px;
   margin-bottom: 3rem;
   position: relative;
+  font-size: 2.5rem;
 }
 
 .about-title::after {
@@ -151,7 +152,7 @@
 
 .values-item {
   counter-increment: value-counter;
-  background: var(--primary-bg);
+  background: var(--secondary-bg);
   border-radius: 16px;
   padding: 2rem 2rem 2rem 4rem;
   margin-bottom: 1.5rem;

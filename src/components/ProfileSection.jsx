@@ -20,10 +20,10 @@ export const ProfileSection = () => {
             </button>
             <div className="icon-group">
               <a href="https://github.com/kylemims" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/github.svg" alt="GitHub" className="profile-icon" />
+                <img src="/assets/github-yellow.svg" alt="GitHub" className="profile-icon" />
               </a>
               <a href="https://www.linkedin.com/in/kylemims/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/linkedin.svg" alt="LinkedIn" className="profile-icon" />
+                <img src="/assets/linked-yellow.svg" alt="LinkedIn" className="profile-icon" />
               </a>
             </div>
           </div>

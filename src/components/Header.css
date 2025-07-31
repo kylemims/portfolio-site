@@ -74,7 +74,7 @@
   }
 
   .header nav a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.3rem 0.8rem;
     flex: 1 1 auto; /* allows buttons to shrink evenly */
     text-align: center;

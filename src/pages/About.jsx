@@ -12,13 +12,13 @@ export const About = () => {
           <div className="text-photo-wrapper">
             <p className="subheading">A creative journey from stage to screen</p>
             <p className="intro-text">
-              Hey, I'm Kyle — a designer-turned-developer with a background in music, branding, and building
-              unforgettable experiences.
+              Hey, I'm Kyle — a former creative entrepreneur turned software developer with a background in
+              branding, business leadership, and building badass experiences.
             </p>
             <div className="about-paragraph">
               I spent years touring as a musician and running a high-energy fitness brand before making the
-              leap into tech. Turns out, whether I'm launching a band, a business, or a web app — I live for
-              bold ideas, clean design, and user-first thinking.
+              leap into tech. Turns out, whether I'm launching a product, a business, or a web app — I live
+              for bold ideas, clean design, and user-first thinking.
             </div>
           </div>
         </section>
@@ -69,14 +69,18 @@ export const About = () => {
           <div className="skill-card">
             <h2>Outside the Code</h2>
             <p>
-              I still play music, love a good design rabbit hole, and take a lot of pride in helping others
-              feel seen and heard — whether that’s through a website or a well-timed playlist.
+              My wife is way cooler than me, I love a good design rabbit hole, and take a lot of pride in
+              helping others feel seen and heard — whether that’s through a website or a good ol'
+              conversation.
             </p>
           </div>
 
           <div className="skill-card">
             <h2>Let’s Connect</h2>
-            <p>I’m always open to new projects, partnerships, or just a good conversation.</p>
+            <p>
+              I’m always open to new projects, partnerships, or just some friendly banter. I value feedback
+              and would love to hear your thoughts!
+            </p>
             <a href="/contact" className="about-contact-link">
               Contact Me
             </a>

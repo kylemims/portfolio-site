@@ -16,10 +16,10 @@ export const Header = () => {
               <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <NavLink to="/websites-apps">Web Design</NavLink>
+              <NavLink to="/websites-apps">Web</NavLink>
             </li>
             <li>
-              <NavLink to="/graphic-design">Graphic Design</NavLink>
+              <NavLink to="/graphic-design">Graphic</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>

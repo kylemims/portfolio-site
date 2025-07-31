@@ -66,18 +66,18 @@
 }
 
 .profile-icon:hover {
-  filter: brightness(0.8) contrast(10) sepia(5%) saturate(0.2) drop-shadow(0 0 2px var(--highlight-color));
+  filter: brightness(0.8) contrast(140%) sepia(20%) saturate(10%);
   transition: filter 0.1s ease;
 }
 
 .cta-lightbg-button {
-  background-color: var(--secondary-bg);
+  background-color: var(--card-bg);
   color: var(--highlight-color);
   padding: 1rem 1.25rem;
   width: 170px;
   border-radius: 30px;
   border: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -86,7 +86,7 @@
   transition: background 0.3s ease;
 }
 
-/* .profile-text button:hover {
+.profile-text button:hover {
   background-color: var(--highlight-color);
 }
 
@@ -103,11 +103,12 @@
   }
 
   .profile-text h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .profile-text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   .profile-icon-row {
