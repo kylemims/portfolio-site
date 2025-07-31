@@ -134,7 +134,10 @@ export const WebProjectsSection = () => {
           </Swiper>
           <div className="project-links">
             <a href="/contact" target="_blank" rel="noopener noreferrer" className="webapp-feature-buttons">
-              Want to Colab?
+              Wanna Colab?
+            </a>
+            <a href="/contact" target="_blank" rel="noopener noreferrer" className="webapp-feature-buttons">
+              Coming soon
             </a>
           </div>
         </div>

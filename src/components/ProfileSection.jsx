@@ -14,9 +14,9 @@ export const ProfileSection = () => {
           </p>
           <div className="profile-icon-row">
             <button
-              className="cta-button"
+              className="cta-lightbg-button"
               onClick={() => (window.location.href = "mailto:kylemims.dev@gmail.com")}>
-              Send Feedback
+              Let's collab
             </button>
             <div className="icon-group">
               <a href="https://github.com/kylemims" target="_blank" rel="noopener noreferrer">

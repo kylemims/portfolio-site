@@ -18,7 +18,7 @@
 .section-title {
   color: var(--highlight-color);
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .project-card {
@@ -60,8 +60,8 @@
 .webapp-feature-buttons {
   background-color: var(--accent-color);
   color: #fff;
-  padding: 0.65rem 1rem;
-  width: 150px;
+  padding: 0.65rem 0.75rem;
+  width: 140px;
   border-radius: 30px;
   font-size: 0.8rem;
   font-weight: bold;

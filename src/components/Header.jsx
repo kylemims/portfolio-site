@@ -21,6 +21,9 @@ export const Header = () => {
             <li>
               <NavLink to="/graphic-design">Graphic Design</NavLink>
             </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
           </ul>
         </nav>
       </div>
