@@ -66,7 +66,7 @@ export const WebProjectsSection = () => {
               View Code
             </a>
             <a
-              href="https://pizza.kylemims.com"
+              href="https://pizza.kylemims.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="webapp-feature-buttons">
@@ -104,7 +104,7 @@ export const WebProjectsSection = () => {
               View Code
             </a>
             <a
-              href="https://pickapark.kylemims.com"
+              href="https://pickapark.kylemims.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="webapp-feature-buttons">
