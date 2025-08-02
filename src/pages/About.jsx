@@ -64,6 +64,13 @@ export const About = () => {
               modern front-end frameworks, and build tools that make everyday work intuitive, useful, and
               empowering.
             </p>
+            <div className="tech-stack">
+              <span className="tech-badge primary">Full-Stack Developer</span>
+              <span className="tech-badge">JavaScript</span>
+              <span className="tech-badge">React</span>
+              <span className="tech-badge">Python</span>
+              <span className="tech-badge">Django</span>
+            </div>
           </div>
 
           <div className="skill-card">
