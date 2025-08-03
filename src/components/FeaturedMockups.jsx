@@ -46,6 +46,13 @@ export const FeaturedMockups = () => {
     <section className="featured-mockups">
       <div>
         <h2>Featured Projects</h2>
+        <div className="tech-showcase">
+          <span className="highlight-tech">Full-Stack Developer</span>
+          <span className="highlight-tech">JavaScript</span>
+          <span className="highlight-tech">React</span>
+          <span className="highlight-tech">Python</span>
+          <span className="highlight-tech">Django</span>
+        </div>
         <div className="mockup-grid">
           {mockups.map((mockup, index) => (
             <div className="mockup-card" key={index} ref={(el) => (cardsRef.current[index] = el)}>
@@ -64,9 +71,3 @@ export const FeaturedMockups = () => {
     </section>
   );
 };
-
-// <div className="mockup-card" key={index} ref={(el) => (cardsRef.current[index] = el)}>
-//   <img src={mockup.img} alt={mockup.title} />
-//   <h3>{mockup.title}</h3>
-//   <p>{mockup.desc}</p>
-// </div>
