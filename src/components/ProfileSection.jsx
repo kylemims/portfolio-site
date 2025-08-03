@@ -22,7 +22,7 @@ export const ProfileSection = () => {
               <a href="https://github.com/kylemims" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/github-yellow.svg" alt="GitHub" className="profile-icon" />
               </a>
-              <a href="https://www.linkedin.com/in/kylemims/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/kylemims-dev/" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/linked-yellow.svg" alt="LinkedIn" className="profile-icon" />
               </a>
             </div>
