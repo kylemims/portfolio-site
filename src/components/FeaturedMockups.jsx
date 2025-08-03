@@ -45,7 +45,7 @@ export const FeaturedMockups = () => {
   return (
     <section className="featured-mockups">
       <div>
-        <h2>Featured Projects</h2>
+        <h2 className="featured-title">Featured Projects</h2>
         <div className="tech-showcase">
           <span className="highlight-tech">Full-Stack Developer</span>
           <span className="highlight-tech">JavaScript</span>

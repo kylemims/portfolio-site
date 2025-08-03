@@ -130,10 +130,12 @@
 
 .tech-showcase {
   display: flex;
-  flex-shrink: 5;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.1rem;
   text-align: center;
-  margin: 4rem 0;
+  margin: 4rem auto;
+  max-width: 100%;
 }
 
 @keyframes underlineGlow {
@@ -146,28 +148,21 @@
 }
 
 .highlight-tech {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  padding: 0.4rem 1rem;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--text-color);
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  animation: underlineGlow 2s ease-in-out infinite alternate;
-}
-.highlight-tech {
   background: linear-gradient(45deg, var(--accent-color), var(--highlight-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  backdrop-filter: blur(20px);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
   font-family: var(--font-body);
   font-weight: 600;
   text-shadow: 0 0 10px rgba(235, 111, 146, 0.3);
+  font-size: 0.85rem;
   position: relative;
+  transition: all 0.2s ease;
+  animation: underlineGlow 2s ease-in-out infinite alternate;
 }
 .highlight-tech:hover {
   background: var(--accent-color);
@@ -255,6 +250,7 @@
 }
 @media (max-width: 600px) {
   .tech-showcase {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.9rem;
   }
 }
