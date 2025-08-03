@@ -15,7 +15,7 @@ export const Footer = () => {
             LinkedIn
           </a>{" "}
           |
-          <a href="/assets/KyleMims-Dev-Resume.pdf" target="_blank" rel="noreferrer">
+          <a href="/assets/KyleMims-Dev-Res.pdf" target="_blank" rel="noreferrer">
             Resume
           </a>
         </p>
