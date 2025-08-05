@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 import { LoadingSpinner } from "./components/LoadingSpinner.jsx";
 import { HomePage } from "./pages/HomePage";
 import { ContactPage } from "./pages/Contact";
@@ -32,6 +32,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <Footer />
       </div>
     </Router>
   );
