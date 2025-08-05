@@ -4,7 +4,7 @@ export const ProfileSection = () => {
   return (
     <section className="profile-section">
       <div className="profile-container">
-        <img src="/assets/headshot-km.png" alt="Kyle Mims" className="profile-image" />
+        <img src="/assets/headshot-km.png" alt="Kyle Mims" className="profile-image" loading="lazy" />
         <div className="profile-text">
           <h2>Let’s Build Something Meaningful</h2>
           <p>

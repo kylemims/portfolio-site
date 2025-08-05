@@ -4,7 +4,7 @@ import { GalleryModal } from "../components/GalleryModal.jsx";
 import { NavLink } from "react-router-dom";
 import "./GraphicDesignProjects.css";
 
-export const GraphicDesignPage = () => (
+const GraphicDesignPage = () => (
   <Wrapper>
     <h1 className="graphic-page-title">Graphic Design</h1>
 
@@ -50,3 +50,4 @@ export const GraphicDesignPage = () => (
     </section>
   </Wrapper>
 );
+export default GraphicDesignPage;

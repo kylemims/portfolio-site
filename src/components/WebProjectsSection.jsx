@@ -128,7 +128,7 @@ export const WebProjectsSection = () => {
             className="swiper-wrapper">
             {vividImages.map((src, index) => (
               <SwiperSlide key={index}>
-                <img src={src} alt={`Vivid Slide ${index + 1}`} className="slide-image" />
+                <img src={src} alt={`Vivid Slide ${index + 1}`} className="slide-image" loading="lazy" />
               </SwiperSlide>
             ))}
           </Swiper>

@@ -80,7 +80,7 @@ export const GraphicDesignGallery = () => {
       <div className="projects-grid">
         {designs.map((design, index) => (
           <div key={index} className="gallery-thumbnail" onClick={() => openModal(index)}>
-            <img src={design.thumb} alt={design.name} />
+            <img src={design.thumb} alt={design.name} loading="lazy" />
             <div className="image-overlay">
               <span className="image-title">{design.name}</span>
             </div>

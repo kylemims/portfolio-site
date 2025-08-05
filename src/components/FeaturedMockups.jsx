@@ -18,12 +18,14 @@ export const FeaturedMockups = () => {
       { threshold: 0.2 }
     );
 
-    cardsRef.current.forEach((card) => {
+    const cards = cardsRef.current.slice(); // Copy current ref value
+
+    cards.forEach((card) => {
       if (card) observer.observe(card);
     });
 
     return () => {
-      cardsRef.current.forEach((card) => {
+      cards.forEach((card) => {
         if (card) observer.unobserve(card);
       });
     };
@@ -63,7 +65,7 @@ export const FeaturedMockups = () => {
                   View Details
                 </a>
               </div>
-              <img src={mockup.img} alt={mockup.title} />
+              <img src={mockup.img} alt={mockup.title} loading="lazy" />
             </div>
           ))}
         </div>

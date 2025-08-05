@@ -34,7 +34,7 @@ export const GalleryModal = ({ isOpen, onClose, images, startIndex = 0 }) => {
           spaceBetween={30}>
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <img src={src} alt={`Slide ${index + 1}`} />
+              <img src={src} alt={`Slide ${index + 1}`} loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>
