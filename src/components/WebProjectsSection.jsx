@@ -1,10 +1,7 @@
 // WebProjectsSection.jsx
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+//
+import { ImageCarousel } from "./ImageCarousel.jsx";
 import "./WebProjectsSection.css";
 
 export const WebProjectsSection = () => {
@@ -44,7 +41,7 @@ export const WebProjectsSection = () => {
           <p className="project-description">
             Custom pizza-ordering app with React, dynamic pricing, inventory tracking, and order reports.
           </p>
-          <Swiper
+          {/* <Swiper
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
@@ -56,7 +53,8 @@ export const WebProjectsSection = () => {
                 <img src={src} alt={`Pizza Slide ${index + 1}`} className="slide-image" />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
+          <ImageCarousel images={pizzaImages} altPrefix="Pizza App" />
           <div className="project-links">
             <a
               href="https://github.com/kylemims/punk-pizza"
@@ -82,7 +80,7 @@ export const WebProjectsSection = () => {
             National park itinerary planner with React, NPS API integration, weather filters, and PDF/email
             sharing.
           </p>
-          <Swiper
+          {/* <Swiper
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
@@ -94,7 +92,8 @@ export const WebProjectsSection = () => {
                 <img src={src} alt={`Park Slide ${index + 1}`} className="slide-image" />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
+          <ImageCarousel images={parkImages} altPrefix="Park App" />
           <div className="project-links">
             <a
               href="https://github.com/kylemims/parkplan-capstone"
@@ -119,7 +118,7 @@ export const WebProjectsSection = () => {
             Vision for an all-in-one business platform: CRM, marketing suite, booking, billing & analytics in
             a single elegant dashboard.
           </p>
-          <Swiper
+          {/* <Swiper
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
@@ -131,7 +130,8 @@ export const WebProjectsSection = () => {
                 <img src={src} alt={`Vivid Slide ${index + 1}`} className="slide-image" loading="lazy" />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
+          <ImageCarousel images={vividImages} altPrefix="Vivid Platform" />
           <div className="project-links">
             <a href="/contact" target="_blank" rel="noopener noreferrer" className="webapp-feature-buttons">
               Wanna Colab?
