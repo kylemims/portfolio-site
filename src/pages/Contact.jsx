@@ -6,11 +6,11 @@ import "./Contact.css";
 export const ContactPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsModalOpen(true);
-    e.target.reset();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setIsModalOpen(true);
+  //   e.target.reset();
+  // };
 
   return (
     <Wrapper>
@@ -20,10 +20,11 @@ export const ContactPage = () => {
         <form
           name="contact"
           method="POST"
+          action="/thank-you"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          className="contact-form"
-          onSubmit={handleSubmit}>
+          className="contact-form">
+          {/* onSubmit={handleSubmit}> */}
           {/* Netlify form detection */}
           <input type="hidden" name="form-name" value="contact" />
 
