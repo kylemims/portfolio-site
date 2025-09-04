@@ -8,7 +8,9 @@ export const ConfirmModal = ({ isOpen, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h2>Message Sent!</h2>
         <p>Thanks for reaching out — I’ll be in touch soon!</p>
-        <button onClick={onClose}>Close</button>
+        <button onClick={onClose} className="modal-close-button">
+          Close
+        </button>
       </div>
     </div>
   );
