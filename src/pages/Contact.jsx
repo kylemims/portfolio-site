@@ -5,12 +5,37 @@ import "./Contact.css";
 
 export const ContactPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIsModalOpen(true);
-  //   e.target.reset();
-  // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (response.ok) {
+        // Success! Show modal instead of redirecting
+        setIsModalOpen(true);
+        e.target.reset();
+      } else {
+        // Fallback: redirect to thank-you page
+        window.location.href = "/thank-you";
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      // Fallback: redirect to thank-you page
+      window.location.href = "/thank-you";
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <Wrapper>
@@ -23,8 +48,8 @@ export const ContactPage = () => {
           action="/thank-you"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          className="contact-form">
-          {/* onSubmit={handleSubmit}> */}
+          className="contact-form"
+          onSubmit={handleSubmit}>
           {/* Netlify form detection */}
           <input type="hidden" name="form-name" value="contact" />
 
@@ -51,10 +76,11 @@ export const ContactPage = () => {
             <textarea name="message" id="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit" className="submit-contact-form-button">
-            Send Message
+          <button type="submit" className="submit-contact-form-button" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
         </form>
+
         <ConfirmModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </Wrapper>
