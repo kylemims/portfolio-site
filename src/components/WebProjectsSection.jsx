@@ -5,6 +5,11 @@ import { ImageCarousel } from "./ImageCarousel.jsx";
 import "./WebProjectsSection.css";
 
 export const WebProjectsSection = () => {
+  const bashImages = [
+    "/assets/bashstash/bashstash-1.png",
+    "/assets/bashstash/bashstash-2.png",
+    "/assets/bashstash/bashstash-3.png",
+  ];
   const pizzaImages = [
     "/assets/pizza/pizza-hero.png",
     "/assets/pizza/pizza-builder-1.png",
@@ -37,23 +42,36 @@ export const WebProjectsSection = () => {
       <div className="project-row">
         {/* Punk Rock Pizza */}
         <div className="project-card">
+          <h3 className="project-title">BASH STASH</h3>
+          <p className="project-description">
+            A Django REST API that generates complete, deployable web applications on demand.{" "}
+            <span className="coming-soon">coming soon!</span>{" "}
+          </p>
+
+          <ImageCarousel images={bashImages} altPrefix="Bash Stash App" />
+          <div className="project-links">
+            <a
+              href="https://github.com/kylemims/bashville-client"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="webapp-feature-buttons">
+              View Code
+            </a>
+            <a
+              href="https://github.com/kylemims/bashville-client"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="webapp-feature-buttons">
+              View Live
+            </a>
+          </div>
+        </div>
+        <div className="project-card">
           <h3 className="project-title">PUNK ROCK PIZZA</h3>
           <p className="project-description">
             Custom pizza-ordering app with React, dynamic pricing, inventory tracking, and order reports.
           </p>
-          {/* <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            spaceBetween={20}
-            className="swiper-wrapper">
-            {pizzaImages.map((src, index) => (
-              <SwiperSlide key={index}>
-                <img src={src} alt={`Pizza Slide ${index + 1}`} className="slide-image" />
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
+
           <ImageCarousel images={pizzaImages} altPrefix="Pizza App" />
           <div className="project-links">
             <a
@@ -80,19 +98,7 @@ export const WebProjectsSection = () => {
             National park itinerary planner with React, NPS API integration, weather filters, and PDF/email
             sharing.
           </p>
-          {/* <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            spaceBetween={20}
-            className="swiper-wrapper">
-            {parkImages.map((src, index) => (
-              <SwiperSlide key={index}>
-                <img src={src} alt={`Park Slide ${index + 1}`} className="slide-image" />
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
+
           <ImageCarousel images={parkImages} altPrefix="Park App" />
           <div className="project-links">
             <a
@@ -118,19 +124,7 @@ export const WebProjectsSection = () => {
             Vision for an all-in-one business platform: CRM, marketing suite, booking, billing & analytics in
             a single elegant dashboard.
           </p>
-          {/* <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            spaceBetween={20}
-            className="swiper-wrapper">
-            {vividImages.map((src, index) => (
-              <SwiperSlide key={index}>
-                <img src={src} alt={`Vivid Slide ${index + 1}`} className="slide-image" loading="lazy" />
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
+
           <ImageCarousel images={vividImages} altPrefix="Vivid Platform" />
           <div className="project-links">
             <a href="/contact" target="_blank" rel="noopener noreferrer" className="webapp-feature-buttons">

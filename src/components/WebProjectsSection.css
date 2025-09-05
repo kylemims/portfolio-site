@@ -4,25 +4,32 @@
   margin: 0 auto;
   padding-bottom: 150px;
 }
+.grid-container,
 .project-row {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
   align-items: stretch;
-  justify-content: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(min-content, auto);
+  grid-gap: 2rem 2rem;
 }
+
 .section-title {
   color: var(--highlight-color);
   font-size: 2.5rem;
   margin-bottom: 4rem;
 }
 
+.coming-soon {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
 .project-card {
   background-color: var(--card-bg);
-  border-radius: 8px;
-  padding: 2rem 1rem;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
   max-width: 600px;
   flex: 1;
   min-width: 300px;
@@ -32,7 +39,7 @@
 
 .project-title {
   color: var(--highlight-color);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -45,14 +52,14 @@
 
 .slide-image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .project-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .webapp-feature-buttons {
@@ -79,20 +86,20 @@
     align-items: center;
   }
 }
+
 @media (max-width: 768px) {
   .project-card {
-    padding: 1.2rem 0.8rem;
-    max-width: 360px;
+    padding: 1.2rem 0rem;
+    max-width: 440px;
   }
 
   .project-description {
     font-size: 0.85rem;
   }
 
+  .grid-container,
   .project-row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 389px) {
