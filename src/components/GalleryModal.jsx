@@ -39,7 +39,9 @@ export const GalleryModal = ({ isOpen, onClose, images, startIndex = 0 }) => {
           ))}
         </Swiper>
 
-        <button onClick={onClose}>Close</button>
+        <button className="modal-close-button" onClick={onClose}>
+          Close
+        </button>
       </div>
     </div>
   );

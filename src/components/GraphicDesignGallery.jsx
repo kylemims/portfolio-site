@@ -48,6 +48,11 @@ const designs = [
     thumb: "/assets/graphic-design/Baseball-NR-thumbnail.webp",
     full: "/assets/graphic-design/Baseball-NR-feature.webp",
   },
+  {
+    name: "Snake Vase",
+    thumb: "/assets/graphic-design/snake-vase-thumbnail.webp",
+    full: "/assets/graphic-design/snake-vase-feature.webp",
+  },
 ];
 
 export const GraphicDesignGallery = () => {
